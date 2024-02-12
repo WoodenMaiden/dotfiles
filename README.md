@@ -39,3 +39,5 @@ stow .
 ```
 
 And tadaaaaa 🎉 you are good to go!
+
+Credit goes to [the video of Dreams of Autonomy](https://www.youtube.com/watch?v=y6XCebnB9gs)
