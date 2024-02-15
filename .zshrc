@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export HOST="$(uname -n)"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -111,4 +112,3 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export HOST="$(uname -n)"
