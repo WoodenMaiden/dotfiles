@@ -8,9 +8,6 @@ blinking = "On"
 shape = "Beam"
 blinking = "On"
 
-[env]
-HOST = "localhost"
-
 [colors.primary]
 background = "#282828"
 foreground = "#d4be98"

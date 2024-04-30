@@ -4,7 +4,14 @@
 # Path to your oh-my-zsh installation.
 export HOST="$(uname -n)"
 export ZSH="$HOME/.oh-my-zsh"
+export TERM="xterm-256color"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
+if command -v pyenv &> /dev/null
+then
+  eval "$(pyenv init --path)"
+fi
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -71,7 +78,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git helm asdf nvm rust sdk kubectl docker docker-compose terraform mix suse)
+plugins=(git helm asdf nvm rust sdk kubectl docker docker-compose terraform mix suse golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,7 +95,7 @@ export EDITOR='nvim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# PATH="$PATH:/home/yann/.cargo/bin"
+export PATH=$PATH:/usr/local/go/bin
 
 # ....###....##.......####....###.....######..########..######.
 # ...##.##...##........##....##.##...##....##.##.......##....##
@@ -111,4 +118,3 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
