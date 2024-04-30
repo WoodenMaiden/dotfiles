@@ -1,0 +1,19 @@
+[user]
+	name = WoodenMaiden
+	email = yann.pomie@laposte.net
+	signingkey = 4FA262C188D41A40
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[credential]
+	helper = store
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
