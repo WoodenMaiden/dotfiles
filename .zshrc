@@ -126,3 +126,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # add Pulumi to the PATH
 export PATH=$PATH:/home/yann/.pulumi/bin
+
+# Created by `pipx` on 2024-05-14 12:41:43
+export PATH="$PATH:/home/yann/.local/bin"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/mc mc
