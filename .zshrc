@@ -132,3 +132,5 @@ export PATH="$PATH:/home/yann/.local/bin"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/mc mc
+alias framework_tool='sudo framework_tool --driver portio'
+eval "$(zoxide init --cmd cd zsh)"
