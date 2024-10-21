@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
 
     # Define the number of virtual machines you want to create
-    num_vms = 4
+    num_vms = unless ENV['NUM_VM'].nil? then ENV['NUM_VM'].to_i else 4 end
   
     # Define a list of predefined hostnames
     predefined_hostnames = ["Excalibur", "Mag", "Volt", "Trinity"]

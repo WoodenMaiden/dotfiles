@@ -31,6 +31,10 @@
 @define-color popover_fg_color #fbf1c7;
 @define-color shade_color rgba(0,0,0,0.36);
 @define-color scrollbar_outline_color rgba(0,0,0,0.5);
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
 @define-color blue_1 rgb(153,193,241);
 @define-color blue_2 rgb(98,160,234);
 @define-color blue_3 rgb(53,132,228);
@@ -76,7 +80,3 @@
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
-@define-color sidebar_bg_color @window_bg_color;
-@define-color sidebar_fg_color @window_fg_color;
-@define-color sidebar_border_color @window_bg_color;
-@define-color sidebar_backdrop_color @window_bg_color;
