@@ -125,7 +125,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # add Pulumi to the PATH
-export PATH=$PATH:/home/yann/.pulumi/bin
+export GOPATH=/home/yann/go
+export PATH="$PATH:/home/yann/.pulumi/bin:/home/yann/go/bin"
 
 # Created by `pipx` on 2024-05-14 12:41:43
 export PATH="$PATH:/home/yann/.local/bin"
